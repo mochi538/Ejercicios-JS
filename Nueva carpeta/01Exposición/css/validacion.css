@@ -10,7 +10,7 @@ body{
     border: 1px solid black;
     width: 400px;
     height: fit-content;
-    color:bisque;
+    color:rgb(255, 255, 255);
     border-radius: 10px;
     background-color: rgb(37, 35, 35);
     margin: auto;
@@ -41,7 +41,7 @@ h1{
     height: 30px;
     border-radius: 10px;
     padding: 0px 20px;
-    color: bisque;
+    color: rgb(255, 255, 255);
     border: none;
 }
 
@@ -52,7 +52,7 @@ border-radius: 5px;
 margin: 30px 0px;
 width: 30%;
 text-align: center;
-color: bisque;
+color: rgb(255, 255, 255);
 }
 .error{
     color: red;
