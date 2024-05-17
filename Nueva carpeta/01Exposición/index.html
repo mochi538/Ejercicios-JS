@@ -12,23 +12,20 @@
     </header>
     <main class="formulario">
         <h3 class="titulo">Registro</h3>
-        <form>
-                <label class="label">Nombre</label>
-                <input class="input" type="text" id="nombre">
+        <form action="" method="post" id="form">
+            <label class="label">Nombre</label>
+            <input class="input" type="text" id="nombre"><br>
 
-                <label class="label">Correo</label>
-                <input class="input" type="text" id="Correo">
+            <label class="label">Correo</label>
+            <input class="input" type="text" id="correo"><br>
 
-                <label class="label">Password</label>
-                <input class="input" type="text" id="contraseña">
-                
-                <input class="boton" type="button" onclick='validardatos()' value="Enviar Datos" id="boton">
+            <label class="label">Password</label>
+            <input class="input" type="text" id="password"><br>
+
+            <button type="submit" class="boton" onclick='validardatos()' id="boton">Validar datos</button>
+            <section class="error" id="error"></section> 
         </form>
-        
     </main>
-    <footer>
-        <section></section>
-    </footer>
     <script src="./js/validacion.js"></script>
 </body>
 </html>
