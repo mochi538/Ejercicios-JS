@@ -8,16 +8,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="flex border-slate-950">
-
-        <nav class="bg-gray-800" >
-            <ul  class="ml-10 flex items-baseline space-x-4">
-                <li><a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Inicio</a></li>
-                <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Sobre mi</a></li>
-                <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Proyectos</a></li>
-                <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Actividades en clase</a></li>
-            </ul>
-        </nav>
+    <header class = "flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <h1 class="h-8 w-auto" >Logo</h1>
+        <section class="flex flex-shrink-0 items-center">
+            <nav class="bg-gray-800" >
+                <ul  class="ml-10 flex items-baseline space-x-4">
+                    <li><a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Inicio</a></li>
+                    <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Sobre mi</a></li>
+                    <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Proyectos</a></li>
+                    <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Actividades en clase</a></li>
+                </ul>
+            </nav>
+        </section>
+        
     </header>
     <main class="border-4 border-black h-full">
         <section class="w-lvw ">
@@ -30,8 +33,8 @@
             </article>
         </section>
     </main>
-    <footer>
-        
+    <footer> 
+      
         <section>
             <h3>Contactos</h3>
 
@@ -42,5 +45,27 @@
             </form>
         </section>
     </footer>
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        </nav>
 </body>
 </html>

@@ -26,7 +26,6 @@ form.addEventListener("submit",e=>{
     } else{
         correo.style.border="none"
     }
-    
     /* Validación contraseña */
     if(pass.value.length < 8){
         pass.style.border="1px solid red"
