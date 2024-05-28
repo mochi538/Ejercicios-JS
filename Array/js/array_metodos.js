@@ -1,6 +1,7 @@
 /* Métodos de array */
-/* Matriz = método; para que no te confundas */
+/* Matriz = array; para que no te confundas */
 
+/* ----------------------Métodos básicos--------------------------- */
 /* Array length: tamaño del la matriz*/
 const var1 = ["Banana","Orange","Mango"];
 let size = var1.length;
@@ -15,24 +16,14 @@ console.log(var1)
 /* Array toString(): devuelve las matrices separadas por comas */
 const var2 = ["amarillo", "verde", "azul", "negro"];
 console.log(var2.toString())
+/* JS lo tiene como defecto */
+console.log(var2)
 
 /* Método JS() */
 /* Con at() llama la matriz según la posición (Es igual que con [], es una manera de deemplazar los corchetes) */
 const var3 = [1,2,3,4,5];
 let atscript = var3.at(2);
 console.log(atscript)
-
-/* 
- 
-
-
-
-
-Array copyWithin()
-Array flat()
-Array splice()
-Array toSpliced()
-Array slice()*/
 
 /* Método unir()*/
 /* Imprime los datos del array al igual que toString pero con este se puede definir el separador */
@@ -86,3 +77,75 @@ console.log(var9)
 let var10_1 = ["Hola"]
 let var10_2 = ["Mundo"]
 console.log(var10_1.concat(var10_2))
+console.log((var10_1.concat(var10_2)).join(" ")); /* Médtodo join :) */
+
+/* Array copyWithin() */
+/*  */
+let var11 =[true, false,false]
+var11.copyWithin(1,0) /* Posición en la matriz (Copia al primer índice, los elemtos del segundo índice) */
+console.log(var11) 
+/* No modifica la longitud de la matriz */
+
+/* Array flat() */
+/* Agrupa submatrices en una sola matriz ;) */
+let var12 = [[1,2],[3,4],[5,6]];
+let flat = var12.flat();
+console.log(flat)
+
+/* Array splice() */
+/* Agrega elementos en la posición indicada*/
+let var13 = ["Windows", "Mas OS", "Lunix","Solaris"]
+var13.splice(0, 0, "Andoid", "Unix") /* El primer número indica la pocisión y la segunda los elementos que se eliminan */
+console.log(var13)
+console.log(var13.splice()) /* Esto no refleja nada porque no se eliminó ninguna matriz normalmente debe mostrar las matrices eliminadas */
+/* Sin dejar agujeros en el array */
+var13.splice(0, 3); /* 1.Posición y 2. cantidad de elementos a eliminar */
+console.log(var13)
+
+/* Array toSpliced() */
+/* Modificación temporal a diferencia del metodo de arriba */
+let var14 = ["Jan", "Feb", "Mar", "Apr"];
+let spliced = var14.toSpliced(0, 1);
+
+/* Array slice()*/
+/* Crea una nueva matriz a vace de la anterior */
+let var15 = ["Jan", "Feb", "Mar", "Apr"];
+let slice = var15.slice(2); /* A partir de (), si se coloca un degundo argumento ese indica el límite pero no lo toma */
+console.log(var15)
+console.log(slice)
+
+/* --------------------------------------Métodos de búsqueda --------------------- */
+
+/*Matriz indexOf()  */
+/* Devuelve la primera posicicón donde se encuentre el elemento */
+let var16 = ["Apple", "Orange", "Apple", "Mango"];
+let position_1 = var16.indexOf("Apple") 
+console.log(position)
+/* Si no encuentra el elemento devuelve -1 */
+
+/* Matriz lastIndexOf() */
+/* Devuelve la última posicicón donde se encuentre el elemento */
+let var17 = ["Apple", "Orange", "Apple", "Mango"];
+let position_2 = var17.lastIndexOf("Apple") 
+console.log(position_2)
+
+/* Matriz incluye() */
+/* Devuelve true si el elemento se encuentra en la matriz, false en caso contrario */
+let var18 = ["Apple", "Orange", "Apple", "Mango"];
+let position_3 = var18.includes("Apple") 
+console.log(position_3)
+
+/* Matriz buscar() */
+/* Devuelve el índice de la primera ocurrencia del elemento buscado en la matriz*/
+/* solo funciona con funciones */
+let var19 = [1,2,3,4,5,6,7,8,9];
+let position_4 = var19.find(index > 3)
+console.log(position_4)
+
+/* 
+Matriz findIndex()
+Matriz findLast()
+Matriz findLastIndex()
+
+ */
+
