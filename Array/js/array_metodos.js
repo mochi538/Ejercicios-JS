@@ -137,15 +137,55 @@ console.log(position_3)
 
 /* Matriz buscar() */
 /* Devuelve el índice de la primera ocurrencia del elemento buscado en la matriz*/
-/* solo funciona con funciones */
+/* Solo con funciones */
 let var19 = [1,2,3,4,5,6,7,8,9];
-let position_4 = var19.find(index > 3)
+let position_4 = var19.find(funcion1);
 console.log(position_4)
+function funcion1(value,index,array){
+    return value > 3
+}
 
+/* Matriz findIndex() */
+/* Devuelve ls posición del primer valor que pasa por la función de prueba*/
+let var20 = [1,2,3,4,5,6,7,8,9];
+let position_5 = var20.findIndex(funcion2);
+console.log(position_5)
+function funcion2(value,index,array){
+    return value > 3
+}
+
+/* Matriz findLast() */
+/* Pendiente */
+let var21 = [1,2,3,4,5,6,7,8,9];
+let position_6 = var21.findLast(funcion3);
+console.log(position_6)
+function funcion3(value,index,array){
+    return value > 3}
+/* Matriz findLastIndex() */
+
+
+
+/* -------------------------Clasificación de matrices----------------------------- */
 /* 
-Matriz findIndex()
-Matriz findLast()
-Matriz findLastIndex()
+Array sort() Ordena alfabeticamente
+Array inverso () Invierte el array
 
+
+Array toSorted() Ordena 
+Array toReversed()
+Ordenar objetos
  */
 
+
+
+let numeros = [1,2,3,4,5,6,7,8,9]
+
+function funcion(){
+
+}
+
+
+
+/* Exposición------------- */
+let frutas=["naranja","manzana","pera","banana"]
+console.log(frutas.lenght);
